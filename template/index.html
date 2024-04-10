@@ -1,0 +1,339 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+      <div class="container-fluid">
+        <img class="logo" src="{% static 'css/images/logoo.jpg '%}" alt="" > 
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#" style="color: white;">New</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: white;">Women</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="color: white;">Men</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: white;">Kids</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color: white;">FENTYxPUMA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color: white;">Motorsport</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color: white;">Collaborations</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color: white;">Sports</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color: white;">Outlets</a>
+              </li>
+              <li class="nav-item">
+                <div class="search-bar">
+                  <input type="text" class="search-input bg-black" placeholder="SEARCH">
+                  <span class="material-symbols-outlined">
+                    search
+                    </span>
+                </div>
+              </li>
+              <li>
+                <span class="material-symbols-outlined icn1">
+                  favorite
+                  </span>
+                  <span class="material-symbols-outlined icn2">
+                    shopping_cart
+                    </span>
+                    <span class="material-symbols-outlined icn3">
+                      person
+                      </span>
+              </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+    <div class="container-fluid c1">
+      <div class="row">
+        <div class="col-lg-12">
+          <img class="img1" src="{% static 'css/images/ban2.png' %}" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="container c2">
+      <div class="row">
+        <div class="col-lg-12">
+          <h5 class="trend">TRENDING CATEGORIES</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="container c3">
+      <div class="row">
+        <div class="col-lg-2 b1">
+          <img class="img2" src="{% static 'css/images/green.jpg' %}" alt="">
+          <h6 class="name">Sneakers</h6>
+        </div>
+        <div class="col-lg-2 b1">
+          <img class="img2" src="{% static 'css/images/green.jpg' %}" alt="">
+          <h6 class="name">Runner</h6>
+        </div>
+        <div class="col-lg-2 b1">
+          <img class="img2" src="{% static 'css/images/green.jpg' %}" alt="">
+          <h6 class="name">Winterwear</h6>
+        </div>
+        <div class="col-lg-2 b1">
+          <img class="img2" src="{% static 'css/images/green.jpg' %}" alt="">
+          <h6 class="name">Motorsport</h6>
+        </div>
+        <div class="col-lg-2 b1">
+          <img class="img2" src="{% static 'css/images/green.jpg' %}" alt="">
+          <h6 class="name">T-shirts</h6>
+        </div>
+        <div class="col-lg-2 b1">
+          <img class="img2" src="{% static 'css/images/green.jpg' %}" alt="">
+          <h6 class="name">Outlet</h6>
+        </div>
+       
+      </div>
+    </div>
+
+    <div class="container-fluid c4">
+      <div class="row">
+        <div class="col-lg-12">
+          <img class="img3" src="{% static 'css/images/ne.jpg' %}" alt="">
+          <div class="items">
+          <h1>FIRST TIME ON DISCOUNT</h1>
+          <h4>+extra 10% off on prepaid orders</h4>
+          <button>SHOP NOW</button>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container c5">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2>TRENDING NOW</h2>
+        </div>
+      </div>
+    </div>
+
+    <div class="container c6">
+      <div class="row">
+        {% for i in result %}
+        <div class="col-lg-3">
+          <a href="{% url 'details' i.id %}"><img src="{{i.image.url}}" alt=""></a>
+          <h4 class="in1">{{i.name}}</h4><h6 class="in2"><span class="material-icons rupee">attach_money</span>{{i.price}}</h6>
+          <h5>{{i.category}}</h5>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <img class="rheanna" src="{% static 'css/images/rihanna2.jpg' %}" alt="">
+          <div class="ri">
+          <h1>THE CREEPER PHATTY</h1>
+          <h2>BY RIHANNA</h2>
+          <button>SHOP NOW</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid c8">
+    <div class="half picture">
+      <img src="{% static 'css/images/image.jpeg' %}" alt="Background Image">
+
+    </div>
+    <div class="half color">
+      <h1>KIDS ZONE</h1>
+      <p>COOL FITTS FOR COOL KIDS</p>
+      <button>SHOP NOW</button>
+    </div>
+  </div>
+
+  <div class="container-fluid c9">
+    <div class="half color1">
+      <h1>BRING FIRE TO THE PITCH</h1>
+      <p>WORN BY MUHAMMED SHAMI</p>
+      <button class="b4">SHOP CRICKET COLLECTION</button>
+      
+    </div>
+    <div class="half picture">
+      <img src="{% static '/css/images/shami.jpg' %}" alt="Background Image">
+
+    </div>
+  </div>
+
+  <div class="container-fluid c10">
+    <div class="row">
+      <div class="col-lg-12">
+        <img class="dua" src="{% static 'css/images/dua_lipa.webp' %}/" alt="">
+       <div class="d">
+        <h1 class="d1">PALMERO</h1>
+        <h5 class="d2">RETURN OF A CLASSIC</h5>
+        <P class="d3">WORN BY DUA LIPA</P>
+        <button class="d4">SHOP NOW</button><BUtton class="d5">EXPLORE TERRACE</BUtton>
+       </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid c11">
+    <div class="row">
+      <div class="col-lg-12">
+        <img src="{% static 'css/images/rens100_here_banner.webp' %}" alt="">
+      </div>
+    </div>
+  </div>
+
+  <div class="container c12">
+    <div class="row">
+      <div class="col-lg-12">
+        <h3 class="n">FUELED BY NITRO™</h3>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container c13">
+    <div class="row">
+      <div class="col-lg-6">
+        <img src="{% static 'css/images/men1.avif' %}" alt="">
+        <div class="nitro">
+        <h4>DEVIATE NITRO 2</h4>
+        <P>DURABILITY AT ALL DISTANCES</P>
+        <BUtton>SHOP NOW</BUtton>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <img src="{% static 'css/images/lady1.avif' %}" alt="">
+        <div class="nitro">
+          <h4>FOREVERRUN</h4>
+          <P>GUIDED STABILITY</P>
+          <BUtton>SHOP NOW</BUtton>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="container c14">
+    <div class="row">
+      <div class="col-lg-12">
+        <img class="ferrari" src="{% static 'css/images/ferrari.webp' %}" alt="">
+        <div class="ferrar">
+        <h1>JOSHUA VIDES <br> FOR SCUDERIA FRRRARI</h1>
+      <p>BACK TO LAS VEGAS</p>
+      <button class="b4">SHOP NOW</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid c15">
+    <div class="row">
+      <div class="col-lg-12">
+        <video width="100%" height="400" controls autoplay muted>
+          <source src="{% static 'css/images/Ja Morant - Murder On My Mind 🔪 (NBA EDIT).mp4' %}" type="video/mp4">
+
+        </video>
+      
+      </div>
+    </div>
+  </div>
+
+<!-- 
+  <div class="container C16">
+    <div class="row">
+      <div class="col-lg-12">
+        <h3>RECOMMENDED FOR YOU</h3>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- <div class="container c17">
+    <div class="row">
+      <div class="col-lg-3">
+        <img src="{% static 'css/images/shoe5.avif' %}" alt="">
+        <h4 class="in1">{{2000}}</h4><h6 class="in2"><span class="material-icons rupee">attach_money</span>{{2000}}</h6>
+        <h5>{{94933}}</h5>
+      </div>
+    </div>
+  </div> -->
+
+
+  
+  <footer>
+    <div class="container-fluid c18">
+        <div class="row">
+            <div class="col-lg-3 footer-section f1">
+                <h2>SUPPORT</h2>
+                <p><a href="#">Contact Us</a></p>
+                <p><a href="#">Promotions</a></p>
+                <p>track order</p>
+                <p>privacy policy</p>
+                <p>terms&conditions</p>
+                <p>cookie settings</p>
+            </div>
+            <div class="col-lg-3 footer-section f2">
+                <h2>FAQ'S</h2>
+                <p><a href="#">My Account</a></p>
+                <p>track order</p>
+                <p>privacy policy</p>
+                <p>terms&conditions</p>
+                <p>cookie settings</p>
+
+            </div>
+            <div class="col-lg-3 footer-section f3">
+                <h2>ABOUT</h2>
+                <p><a href="#">Carriers</a></p>
+                <p>contact us</p>
+                <p>promotions</p>       
+                <p>cookie settings</p>
+                <p><a href="#">PUMA DNA</a></p>
+
+            </div>
+            <div class="col-lg-3 footer-section f4">
+                <h4 class="f">STAY UPTO DATE</h4>
+                <i class="bi bi-youtube yt"></i><i class="bi bi-twitter tw"></i><i class="bi bi-pinterest pin"></i><i class="bi bi-instagram insta"></i><i class="bi bi-facebook fb"></i>
+                <h4 class="f">EXPLORE</h4>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>
+
+

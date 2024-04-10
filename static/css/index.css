@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Bruno+Ace+SC&family=Bungee+Shade&family=Dhurjati&family=Faster+One&family=Gugi&family=Noto+Sans+Malayalam:wght@800&family=Pacifico&family=Reggae+One&family=Sedgwick+Ave&family=Shadows+Into+Light&family=Silkscreen&family=Teko:wght@300;500&family=Trade+Winds&display=swap');
+img
+{
+    width: 100%;
+}
+
+.logo
+{
+    height: 50px;
+    width: 50px;
+}
+.navbar-nav {
+    margin-left: 1cm; 
+    padding: 1%;
+  }
+
+  .navbar-nav .nav-item {
+    margin-right: 0.5cm; 
+    
+  }
+  body {
+    font-family: 'Teko', sans-serif;
+    font-size: 20px;
+  }
+  
+  .search-bar {
+    position: relative;
+    margin-left: 7.2cm;
+  }
+
+  .search-input {
+    background-color: #000; /* Background color of the search box */
+    color: white; /* Text color */
+    border: 1px solid white; /* White border */
+    padding: 8px 30px 8px 10px; /* Adjust padding as needed */
+    border-radius: 0; /* Adjust border-radius as needed */
+    width: 150px; /* Adjust width as needed */
+    height: 40px;
+  }
+
+  .search-input::placeholder {
+    color: white; /* Placeholder text color */
+  }
+
+  .material-symbols-outlined {
+    position: absolute;
+    right: 10px; /* Adjust this value to position the icon properly */
+    top: 50%;
+    transform: translateY(-50%);
+    color: white; /* Color of the search icon */
+    cursor: pointer;
+  }
+
+ .icn1
+ {
+ position: absolute;
+ right: 10%;
+ }
+
+ .icn2
+ {
+ position: absolute;
+ right: 7%;
+ }
+ .icn3
+ {
+ position: absolute;
+ right: 4%;
+ }
+
+ .img1  
+ {height: 500px;}
+
+ .c2 
+ {
+  margin-top: 5%;
+  text-align: center;
+ }
+
+ .trend
+ {
+  font-size: 40px;
+
+ }
+
+ 
+
+ .b1 {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 1.5cm;
+}
+
+.b1 img {
+  width: 110%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.name {
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  bottom: 33%;
+  left: 10%;
+  right: 0;
+  text-align: center;
+  margin: 0;
+  padding: 8px; /* Adjust padding as needed */
+}
+
+.c4
+{
+  margin-top: 6%;
+  margin-bottom: -18%;
+}
+
+.img3
+{
+  width: 100%;
+  height: 60%;
+}
+
+.img3
+{
+  position: relative;
+}
+.items
+{
+  position:absolute;
+  top: 155%;
+  left: 5%;
+  color: white;
+}
+.c5
+{
+font-size: 35px;
+}
+.in1,.in2
+{
+  display: inline;
+}
+.rupee 
+{
+  color: red;
+  font-size: 18px;
+}
+.in2 
+{
+  color: red;
+  text-align: end;
+  font-size: 20px;
+  margin-left: 4cm;
+}
+.rheanna
+{
+  position: relative;
+}
+.ri 
+{
+  position: absolute;
+  color: black;
+  top: 290%;
+  left: 5%;
+}
+
+.c8,.c9 {
+  margin-top: 3%;
+  display: flex;
+  height: 500px;
+}
+
+.half {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+}
+
+.picture {
+  height: 100%;
+  width: 100%;
+  overflow: hidden; /* Ensure the image doesn't overflow its container */
+}
+
+.picture img {
+  object-fit: cover; /* Make the image cover the entire container */
+  width: 100%;
+  height: 100%;
+}
+
+.color {
+  display: flex;
+  flex-direction: column;
+  background-color: #3498db; 
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.color h1, .color p, .color button {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.color1 {
+  display: flex;
+  flex-direction: column;
+  background-color: #000000; 
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.color1 h1, .color1 p {
+  display: block;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.b4 
+{
+   color: black; 
+   display: block;
+  margin-bottom: 10px;
+}
+
+.c10 
+{
+  margin-top: 3%;
+}
+
+.dua 
+{
+  height: 500px;
+  position: relative;
+}
+
+.d
+{
+  position: absolute;
+  top: 510%;
+  left: 10%;
+  color: white;
+
+}
+
+.c11 
+{
+  margin-top: 3%;
+}
+
+.n 
+{
+  text-align: center;
+}
+
+.c12
+{margin-top: 3%;}
+
+.c13 
+{
+  margin-top: 2%;
+}
+
+.nitro 
+{
+  text-align: center;
+  padding: 10px;
+}
+.c14 
+{
+  margin-top: 3%;
+}
+.ferrari 
+{
+  position: relative;
+}
+
+.ferrar 
+{
+  position: absolute;
+  top: 800%;
+  left: 15%;
+  color: white;
+}
+
+.c15 
+{
+  margin-top: 3%;
+  width: 100%;
+}
+
+.c16 
+{
+  margin-top: 1cm;
+}
+.c17 
+{
+  margin-top: 2%;
+}
+
+.footer
+{
+margin-top: 3%;
+}
+.c18 
+{
+  margin-top: 5%;
+  background-color: black;
+  color: white;
+}
+
+.r1 
+{
+  margin-top: 2%;
+}
+
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 30px 0;
+}
+
+.footer-section {
+  margin-bottom: 30px;
+}
+
+.footer-section h2 {
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-section p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.yt,.fb,.insta,.pin,.tw
+{
+  margin-left: 2%;
+}
+.f 
+{
+  padding: 10px;
+}
+.f1,.f2,.f3,.f4
+{
+text-align: center;
+}
+
+
